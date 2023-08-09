@@ -1,0 +1,91 @@
+.login-container{
+    /* display: flex; */
+    width: 100px;
+    font-weight: bold;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    color: #2974F1;
+    background: white;
+    margin: 5px 0px 15px 30px;
+}
+
+.popup{
+    display: flex;
+    width: 48vw;
+    height: 85vh;   
+    border-radius: 25px;
+    background-color: white;
+    border-radius: 13px;
+    box-shadow: 15px 15px 30px 430px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 40px;
+    left:400px;
+}
+.popup-content{
+    width: 18vw;
+    height: 85vh;
+    margin-top: 0px;
+    border-radius: 13px 0px 0px 13px;
+    background-color: #2974F1;
+}
+.login-heading{
+    color: white;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.login-para{
+    color: white;
+    text-align: left;
+    margin-left: 30px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.popup-right{
+    display: flex;
+    align-items: center;
+    
+    margin-right: 50px;
+}
+.popup-right-content{
+    width: 25vw;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+.inp{
+    width: 20vw;
+    height: 25px;
+    margin-top: 40px;
+    margin-left: 25px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+.right-content{
+    margin-left: 48px;
+    margin-top: 25px;
+    font-size: 0.8rem;
+    text-align: left;
+    font-weight: 600;
+    color: grey;
+}
+.otp-button{
+    width: 20vw;
+    height: 45px;
+    margin-left: 25px;
+    margin-top: 25px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background-color: orangered;
+}
+.right-create-ac{
+    margin-top: 250px;
+    font-size: 0.8rem;
+    font-weight: none;
+    text-align: center;
+}
+
