@@ -1,24 +1,21 @@
 // import { useState } from 'react';
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css';
-import Footer from './component/footer/Footer';
-import SubFooter from './component/footer/SubFooter';
-import Header from './component/header/Header';
+
 import Home from './component/home/Home';
+import ProductDetail from './component/product/productDetail';
 import { Box } from '@mui/material';
 
-function App(){
-  
 
+export default function App() {
   return (
-    <div className="App">
-      <Header />
-      <Box style={{marginTop:17}}>
-        <Home />
-      </Box>
-      <Footer/>
-      <SubFooter/>
-    </div>
-  );
+    <BrowserRouter>
+      <Routes>
+        <Route exact path='/' element={< Home />}/>
+        <Route exact path='/product/:productId' element={< ProductDetail />}/>
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
-export default App;
