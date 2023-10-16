@@ -2,9 +2,9 @@
 /* eslint-disable react/prop-types */
 import { Box, Button, Divider, Typography } from "@mui/material"
 import { Bottom, Card, CardContent, PriceContent, SmallText } from "./styles"
-import { useGetUserId } from "../../hooks/useGetUserId"
+import { useGetUserId } from "../hooks/useGetUserId"
 import { useDispatch } from "react-redux";
-import { deleteItemFromCart } from "../../store/store";
+import { deleteItemFromCart } from "../store/store";
 import { toast } from "react-toastify";
 
 const CartItem = ({ data }) => {

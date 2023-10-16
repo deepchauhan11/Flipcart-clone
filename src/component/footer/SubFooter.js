@@ -39,12 +39,12 @@ const SubFooterContainer = styled(Box)`
 display : flex;
 align-iems : center;
 justify-content : center;
-gap : 4rem;
+gap : 2rem;
 margin-top : 1.2rem;
 
 &  p {
 font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-font-size : 15px;
+font-size : 12px;
 }
 `
 

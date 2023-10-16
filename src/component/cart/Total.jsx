@@ -2,7 +2,7 @@
 import { Box, Typography } from "@mui/material"
 import { TotalContainer } from "./styles"
 import { useEffect, useState } from "react"
-import { useGlobalContext } from "../../context/context"
+import { useGlobalContext } from "../context/context"
 
 const Total = ({ data }) => {
 

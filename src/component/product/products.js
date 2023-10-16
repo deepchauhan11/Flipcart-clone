@@ -64,13 +64,15 @@ const responsive = {
                             </tr>
                           ) : (
                           products.map(product => (
-                                    <Link to={`/product/${product._id}`} target="_blank" rel="noopener noreferrer" key={product._id}>
-                                        <Paper>
+                            <ProductLink>
+                            <Paper>
+                            <Link to={`/product/${product._id}`} target="_blank" rel="noopener noreferrer" key={product._id}>
                                             <img src={product.image} alt="product image" />
-                                            <Typography sx={{ fontWeight: "600", color: "#212121" }} >{product.name}</Typography>
+                                            <Typography sx={{ fontWeight: "600", color: "#212121",  }} >{product.name}</Typography>
                                             <Typography sx={{ color: "green" }} >{product.price}</Typography>
+                                            </Link>
                                         </Paper>
-                                    </Link>
+                            </ProductLink>
                                 
                                     )))}
                         </Carousel>

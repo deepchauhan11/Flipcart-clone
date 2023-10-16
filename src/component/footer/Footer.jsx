@@ -116,7 +116,7 @@ background : #172337;
 color : white;
 padding : 10px;
 width :100% ;
-height : 40vh;
+height : 50vh;
 `
 
 const GridContainer = styled(Grid)`
@@ -142,7 +142,7 @@ gap : 3rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color : #838787;
   margin-bottom : 8px;
-  margin-left : 33px;
+  margin-left : 40px;
   font-size : 14px;
 }
 

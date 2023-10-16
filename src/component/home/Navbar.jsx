@@ -33,9 +33,10 @@ const Container = styled.div`
 }
 .categories_img{
     padding: 0px 15px;
-    width:70px;
+    width:60px;
 }
 .categories_img_name{
     margin-top: 0px;
+    margin-left: 18px;
 }
 `;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 // import { useDispatch, useSelector } from "react-redux";
-import {  useParams } from "react-router-dom";
+import {  useParams, Link } from "react-router-dom";
 import { Box, Button, Grid, TableBody, TableCell, TableRow, Typography } from '@mui/material'
 import { GridContainer, Left, PriceContent, Right, SmallText, StyledBadge } from "./styles";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
@@ -30,7 +30,7 @@ const ProductDetail = () => {
                     <Left>
                         <img src={product.image} alt="product" width="100%" />
                         <Box>
-                            <Button variant="contained"  fullWidth sx={{ background: "#ff9f00", ":hover": { background: "#ff9700" } }} > <ShoppingCartIcon />&nbsp;Add to cart</Button>
+                            <Link to={`/cart`} variant="contained"  fullWidth sx={{ background: "#ff9f00", ":hover": { background: "#ff9700" } }} > <ShoppingCartIcon />&nbsp;Add to cart</Link>
                             <Button variant="contained"  fullWidth sx={{ background: "#fb5413", ":hover": { background: "#fb5413" } }} > <FlashOnIcon />&nbsp;Buy now</Button>
                         </Box>
                     </Left>
@@ -42,7 +42,7 @@ const ProductDetail = () => {
                         <PriceContent>
                             <span>₹{product.price}</span>&nbsp;&nbsp;
                             <span> <strike>{product.description}</strike></span>&nbsp;&nbsp;&nbsp;
-                            <span></span>
+                          
                         </PriceContent>
                         <Typography>Available Offers</Typography>
                         <SmallText>
@@ -72,14 +72,7 @@ const ProductDetail = () => {
                                 </TableCell>
 
                             </TableRow>
-                            <TableRow>
-                                <TableCell colSpan={2} >
-                                    <img src='https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100' alt="advertisement" style={{ width: 300 }} />
-                                </TableCell>
-                            </TableRow>
-                            <TableRow>
-                                <TableCell></TableCell>
-                            </TableRow>
+                           
                         </TableBody>
                     </Right>
                 </Grid>
